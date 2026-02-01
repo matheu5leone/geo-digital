@@ -25,9 +25,11 @@ const Header = () => {
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#hero" className="flex items-center gap-2">
-          <span className="font-display text-xl md:text-2xl font-bold gradient-text">
-            GEO Digital
-          </span>
+          <img
+            src="/assets/logoNoText.png"
+            alt="GEO Digital"
+            className="h-10 md:h-14 w-auto logo-neon-hover cursor-pointer"
+          />
         </a>
 
         {/* Desktop Navigation */}

@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      className="relative min-h-[calc(100vh-66px)] md:min-h-[calc(100vh-82px)] flex items-center mt-[66px] md:mt-[82px] overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
@@ -81,7 +81,7 @@ const Hero = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}
-        transition={{ 
+        transition={{
           opacity: { delay: 1, duration: 0.5 },
           y: { duration: 1.5, repeat: Infinity }
         }}
