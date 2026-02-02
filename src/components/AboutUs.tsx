@@ -68,23 +68,6 @@ const AboutUs = () => {
               ))}
             </div>
 
-            {/* Stats */}
-            <div className="mt-8 glass-card rounded-2xl p-6 md:p-8">
-              <div className="grid grid-cols-3 gap-4 text-center">
-                <div>
-                  <div className="text-2xl md:text-3xl font-display font-bold gradient-text">100+</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mt-1">Clientes</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-display font-bold gradient-text">3+</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mt-1">Anos no Mercado</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-display font-bold gradient-text">1M+</div>
-                  <div className="text-xs md:text-sm text-muted-foreground mt-1">Investido em Ads</div>
-                </div>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>

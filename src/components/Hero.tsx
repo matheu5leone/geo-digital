@@ -9,18 +9,19 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[calc(100vh-66px)] md:min-h-[calc(100vh-82px)] flex items-center mt-[66px] md:mt-[82px] overflow-hidden"
+      className="relative min-h-[calc(100vh-64px)] md:min-h-[calc(100vh-80px)] flex items-center mt-[64px] md:mt-[80px] overflow-hidden"
     >
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src={heroBanner}
           alt="GEO Digital - Agência de Marketing"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-top"
         />
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+        <div className="absolute inset-0 bg-black/30" />
       </div>
 
       {/* Content */}

@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import { MessageCircle, Sparkles, Zap, TrendingUp } from "lucide-react";
+import { MessageCircle, Instagram } from "lucide-react";
 import { Button } from "./ui/button";
 
 const WHATSAPP_LINK = "https://wa.me/5511974489877?text=Olá! Gostaria de saber mais sobre o plano ";
 
 const plans = [
   {
-    icon: Sparkles,
+    icon: "/assets/tiktok_logo.png",
     name: "TikTok Pro Orgânico",
     description: "Estratégia completa para crescimento orgânico no TikTok com criação de conteúdo e gestão de perfil.",
     features: [
@@ -18,7 +18,7 @@ const plans = [
     popular: false,
   },
   {
-    icon: Zap,
+    icon: "/assets/tiktok_logo.png",
     name: "Professional ADS",
     description: "Campanhas de tráfego pago completas no TikTok com foco em conversão e geração de leads.",
     features: [
@@ -30,7 +30,7 @@ const plans = [
     popular: true,
   },
   {
-    icon: TrendingUp,
+    icon: "/assets/instagram_logo.png",
     name: "Pro Insta ADS",
     description: "Estratégia profissional de anúncios no Instagram para escalar seu negócio e gerar resultados.",
     features: [
@@ -77,7 +77,7 @@ const Plans = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className={`relative group ${plan.popular ? 'lg:-mt-4 lg:mb-4' : ''}`}
+              className={`relative group ${plan.popular ? 'lg:-mt-4 lg:mb-4 neon-border-rgb' : ''} rounded-2xl`}
             >
               {/* Popular badge */}
               {plan.popular && (
@@ -90,8 +90,8 @@ const Plans = () => {
 
               <div className={`glass-card rounded-2xl p-6 md:p-8 h-full flex flex-col shadow-card transition-all duration-300 hover:-translate-y-1 ${plan.popular ? 'border-primary/50 ring-1 ring-primary/20' : 'hover:border-primary/30'}`}>
                 {/* Icon */}
-                <div className="w-14 h-14 rounded-xl gradient-brand flex items-center justify-center mb-6 group-hover:shadow-button transition-shadow duration-300">
-                  <plan.icon className="w-7 h-7 text-primary-foreground" />
+                <div className="w-14 h-14 rounded-xl bg-white/10 flex items-center justify-center mb-6 border border-white/20 group-hover:shadow-glow transition-all duration-300">
+                  <img src={plan.icon} alt={plan.name} className="w-8 h-8 object-contain" />
                 </div>
 
                 <h3 className="text-xl md:text-2xl font-display font-semibold mb-3">

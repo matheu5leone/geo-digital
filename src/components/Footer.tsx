@@ -33,7 +33,16 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
                 aria-label="Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <img src="/assets/instagram_logo.png" alt="Instagram" className="w-5 h-5 object-contain opacity-60 hover:opacity-100 transition-opacity" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@oficial.geo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
+                aria-label="TikTok"
+              >
+                <img src="/assets/tiktok_logo.png" alt="TikTok" className="w-5 h-5 object-contain opacity-60 hover:opacity-100 transition-opacity" />
               </a>
               <a
                 href={WHATSAPP_LINK}
@@ -42,7 +51,7 @@ const Footer = () => {
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
                 aria-label="WhatsApp"
               >
-                <MessageCircle className="w-5 h-5" />
+                <img src="/assets/whatsapp_logo.png" alt="WhatsApp" className="w-5 h-5 object-contain opacity-60 hover:opacity-100 transition-opacity" />
               </a>
             </div>
           </motion.div>

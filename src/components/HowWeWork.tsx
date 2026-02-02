@@ -90,6 +90,23 @@ const HowWeWork = () => {
               </div>
             </motion.div>
           ))}
+
+          {/* Mock Graphic Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+            className="hidden lg:block group relative"
+          >
+            <div className=" rounded-2xl p-4 md:p-6 h-full  hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 flex items-center justify-center overflow-hidden">
+              <img
+                src="/assets/grafico.png"
+                alt="Métricas e Resultados"
+                className="w-full h-full object-contain rounded-xl opacity-80 group-hover:opacity-100 transition-opacity duration-300"
+              />
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
