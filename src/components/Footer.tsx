@@ -27,7 +27,7 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 mt-6">
               <a
-                href="https://instagram.com/geodigital.agencia"
+                href="https://instagram.com/geodigital.ofc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
@@ -36,7 +36,7 @@ const Footer = () => {
                 <img src="/assets/instagram_logo.png" alt="Instagram" className="w-5 h-5 object-contain opacity-60 hover:opacity-100 transition-opacity" />
               </a>
               <a
-                href="https://www.tiktok.com/@oficial.geo"
+                href="https://www.tiktok.com/@geodigital.oficial"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary/50 transition-all duration-200"
